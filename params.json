@@ -1,0 +1,6 @@
+{
+  "name": "Blink",
+  "tagline": "a class to blink led for arduino",
+  "body": "# blink\r\na class to blink led for arduino\r\nBlink is based on millis() counter.\r\n\r\n1/ Create led blink objects :\r\n    Blink myLed(4,100,1000); // a led on arduino pin 4. OnTime 100ms , period 1s\r\n    Blink led13(13); // a led on arduino pin 13. OnTime 0.5s , period 1s\r\n\r\n2/ in loop() always call makeBlink() for each led to update leds state\r\n   loop() {\r\n    // your code\r\n    \r\n   myLed.makeBlink();\r\n   led13.makeBlink();\r\n   }\r\n\r\n\r\nBlink parameter can be change at any time with blink class method :\r\n  void on() ; // always on\r\n  void off() ; // always off\r\n  void doFlash(); // on only once during onTime\r\n  void doBlink(); // make blink again after on() or off() or doFlash()\r\n  void setBlink(unsigned int onTime , unsigned int interval); // modify onTime and interval\r\n  void setInterval(unsigned int interval);\r\n  void setOnTime(unsigned int onTime );\r\n  void setFrequency( float freq ); // set blink frequency, 50% on , 50% off\r\n\r\nfor more information, see example or source.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
