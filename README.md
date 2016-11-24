@@ -16,13 +16,13 @@ Blink is based on millis() counter.
 
 
 Blink parameter can be change at any time with blink class method :  
-  `void on() ; // always on  
-   void off() ; // always off  
-   void doFlash(); // on only once during onTime  
-   void doBlink(); // make blink again after on() or off() or doFlash()  
-   void setBlink(unsigned int onTime , unsigned int interval); // modify onTime and interval  
-   void setInterval(unsigned int interval);  
-   void setOnTime(unsigned int onTime );  
-   void setFrequency( float freq ); // set blink frequency, 50% on , 50% off`  
+  `void on() ; // always on`  
+   `void off() ; // always off`  
+   `void doFlash(); // on only once during onTime`  
+   `void doBlink(); // make blink again after on() or off() or doFlash()`  
+   `void setBlink(unsigned int onTime , unsigned int interval); // modify onTime and interval`  
+   `void setInterval(unsigned int interval);`  
+   `void setOnTime(unsigned int onTime );`  
+   `void setFrequency( float freq ); // set blink frequency, 50% on , 50% off`  
 
 for more information, see example or source.
