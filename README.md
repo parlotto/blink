@@ -3,8 +3,8 @@ A class to blink led for arduino
 Blink is based on millis() counter.
 
 1. Create led blink objects :  
-    `Blink myLed(4,100,1000); // a led on arduino pin 4. OnTime 100ms , period 1s  
-     Blink led13(13); // a led on arduino pin 13. OnTime 0.5s , period 1s`
+    `Blink myLed(4,100,1000); // a led on arduino pin 4. OnTime 100ms , period 1s`  
+     `Blink led13(13); // a led on arduino pin 13. OnTime 0.5s , period 1s`  
 
 2. In loop() always call makeBlink() for each led to update leds state  
    `loop() {  
