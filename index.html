@@ -22,30 +22,33 @@
       <h1>
 <a id="blink" class="anchor" href="#blink" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>blink</h1>
 
-<p>a class to blink led for arduino
+<p>A class to blink led for arduino
 Blink is based on millis() counter.</p>
 
-<p>1/ Create led blink objects :
-    Blink myLed(4,100,1000); // a led on arduino pin 4. OnTime 100ms , period 1s
-    Blink led13(13); // a led on arduino pin 13. OnTime 0.5s , period 1s</p>
+<ol>
+<li><p>Create led blink objects :<br>
+<code>Blink myLed(4,100,1000); // a led on arduino pin 4. OnTime 100ms , period 1s</code><br>
+ <code>Blink led13(13); // a led on arduino pin 13. OnTime 0.5s , period 1s</code>  </p></li>
+<li>
+<p>In loop() always call makeBlink() for each led to update leds state<br>
+`loop() {<br>
+ // your code  </p>
 
-<p>2/ in loop() always call makeBlink() for each led to update leds state
-   loop() {
-    // your code</p>
+<p>myLed.makeBlink();<br>
+ led13.makeBlink();<br>
+}`</p>
+</li>
+</ol>
 
-<p>myLed.makeBlink();
-   led13.makeBlink();
-   }</p>
-
-<p>Blink parameter can be change at any time with blink class method :
-  void on() ; // always on
-  void off() ; // always off
-  void doFlash(); // on only once during onTime
-  void doBlink(); // make blink again after on() or off() or doFlash()
-  void setBlink(unsigned int onTime , unsigned int interval); // modify onTime and interval
-  void setInterval(unsigned int interval);
-  void setOnTime(unsigned int onTime );
-  void setFrequency( float freq ); // set blink frequency, 50% on , 50% off</p>
+<p>Blink parameter can be change at any time with blink class method :<br>
+  <code>void on() ; // always on</code><br>
+   <code>void off() ; // always off</code><br>
+   <code>void doFlash(); // on only once during onTime</code><br>
+   <code>void doBlink(); // make blink again after on() or off() or doFlash()</code><br>
+   <code>void setBlink(unsigned int onTime , unsigned int interval); // modify onTime and interval</code><br>
+   <code>void setInterval(unsigned int interval);</code><br>
+   <code>void setOnTime(unsigned int onTime );</code><br>
+   <code>void setFrequency( float freq ); // set blink frequency, 50% on , 50% off</code>  </p>
 
 <p>for more information, see example or source.</p>
 
