@@ -7,16 +7,6 @@
 
 #include "blink.h"
 
-Blink::Blink(){ // do not use. bugged. trying to fix it
-	this->ledPin = 13 ;
-	this->onTime = 500 ;
-	this->interval = 1000 ;
-	previousMillis = 0 ;
-	state = 0 ;
-	mode = BLINK_BLINK ;
-	pinMode(ledPin,OUTPUT);
-	digitalWrite(ledPin,state);
-}
 // these constructors should work 
 Blink::Blink(unsigned int ledPin){
 	this->ledPin = ledPin ;

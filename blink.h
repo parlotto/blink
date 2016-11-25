@@ -16,8 +16,7 @@
 
 class Blink {
 public:
-	Blink(); // do not use currently not working try to fix it
-	Blink(unsigned int ledPin);
+	Blink(unsigned int ledPin=13);
 	Blink(unsigned int ledPin , unsigned int onTime , unsigned int interval);
 	~Blink();
 	void on();
